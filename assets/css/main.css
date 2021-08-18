@@ -23,7 +23,15 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+}
+#nav{
+	color: whitesmoke;
+}
+
+.menu{
+	text-decoration: none;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -2200,6 +2208,11 @@ input, select, textarea {
 
 /* Form */
 
+.align-center{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 	form {
 		margin: 0 0 2em 0;
 	}
@@ -2412,6 +2425,11 @@ input, select, textarea {
 
 /* Icon */
 
+.center{
+	position: relative;
+	top: 15%;
+}
+
 	.icon {
 		text-decoration: none;
 		border-bottom: none;
@@ -2523,7 +2541,7 @@ input, select, textarea {
 			position: absolute;
 			left: 0;
 			top: 0;
-			background-image: url("images/overlay.png");
+			/* background-image: url("images/overlay.png"); */
 			width: 100%;
 			height: 100%;
 			z-index: 1;
@@ -2942,7 +2960,7 @@ input, select, textarea {
 		margin: 0 0 0 -5em;
 		overflow: hidden;
 		position: absolute;
-		text-indent: 10em;
+		/* text-indent: 10em; */
 		white-space: nowrap;
 		width: 10em;
 		z-index: 1;
@@ -2964,7 +2982,18 @@ input, select, textarea {
 			z-index: 1;
 		}
 
+
+
 /* Spotlight */
+
+.subtitle{
+	font-size: large;
+}
+.title{
+	font-size: xx-large;
+	text-decoration: underline;
+	color: #e44c65;
+}
 
 	.spotlight {
 		background-attachment: fixed;
@@ -3057,7 +3086,7 @@ input, select, textarea {
 		}
 
 		.spotlight:before {
-			background-image: url("images/overlay.png");
+			/* background-image: url("images/overlay.png"); */
 			content: '';
 			display: block;
 			height: 100%;
@@ -3087,6 +3116,7 @@ input, select, textarea {
 			border-style: solid;
 			opacity: 1;
 			position: absolute;
+			color:rgba(243, 235, 235, 0.822);
 		}
 
 		.spotlight .goto-next {
@@ -3148,6 +3178,14 @@ input, select, textarea {
 
 		.spotlight.style3 .content {
 			border-color: #39c088;
+		}
+
+		.spotlight.style4 .content {
+			border-color: #ccdf60;
+		}
+
+		.spotlight.style5 .content {
+			border-color: #e96df5;
 		}
 
 		.spotlight.inactive .content {
@@ -3442,9 +3480,10 @@ input, select, textarea {
 	}
 
 	body.landing #header {
-		background: transparent;
+		background-color: rgba(0, 0, 0, 0.144);
 		box-shadow: none;
-		position: absolute;
+		position: fixed;
+		/* border: 1px solid black; */
 	}
 
 /* Banner */
@@ -3520,7 +3559,7 @@ input, select, textarea {
 			}
 
 				#banner .content .image img {
-					border-radius: 100%;
+					/* border-radius: 100%; */
 					display: block;
 					width: 100%;
 				}

@@ -11,35 +11,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 	</head>
 	<body class="is-preload landing">
 		<div id="page-wrapper">
 
 			<!-- Header -->
 				<header id="header">
-					<h1 id="logo"><a href="index.html">Landed</a></h1>
+					<h1 id="logo"><a href="index.html" class="menu">Home</a></h1>
 					<nav id="nav">
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li>
-								<a href="#">Layouts</a>
-								<ul>
-									<li><a href="left-sidebar.html">Left Sidebar</a></li>
-									<li><a href="right-sidebar.html">Right Sidebar</a></li>
-									<li><a href="no-sidebar.html">No Sidebar</a></li>
-									<li>
-										<a href="#">Submenu</a>
-										<ul>
-											<li><a href="#">Option 1</a></li>
-											<li><a href="#">Option 2</a></li>
-											<li><a href="#">Option 3</a></li>
-											<li><a href="#">Option 4</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li><a href="elements.html">Elements</a></li>
-							<li><a href="#" class="button primary">Sign Up</a></li>
+							<li><a href="#intro" class="menu">Intro</a></li>
+							<li><a href="#work" class="menu">Work</a></li>
+							<li><a href="#skills" class="menu">Skills</a></li>
+							<!-- <li><a href="#education" class="menu">Education</a></li>
+							<li><a href="#language" class="menu">Language</a></li> -->
+							<li><a href="#contact" class="menu">Contact</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -48,158 +35,187 @@
 				<section id="banner">
 					<div class="content">
 						<header>
-							<h2>The future has landed</h2>
-							<p>And there are no hoverboards or flying cars.<br />
-							Just apps. Lots of mother flipping apps.</p>
+							<h2>Thao Nguyen</h2>
+							<p>Full Stack Developer<br />
+							at Coderschool.</p>
 						</header>
-						<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+						<span class="image"><img src="images/avatar.jpg" alt="" /></span>
 					</div>
-					<a href="#one" class="goto-next scrolly">Next</a>
+					<a href="#one" class="goto-next scrolly"></a>
 				</section>
 
-			<!-- One -->
-				<section id="one" class="spotlight style1 bottom">
-					<span class="image fit main"><img src="images/pic02.jpg" alt="" /></span>
+			<!-- Intro -->
+				<section id="intro" class="spotlight style1 bottom">
+					<span class="image fit main"><img src="images/intro.png" alt="" /></span>
 					<div class="content">
 						<div class="container">
 							<div class="row">
 								<div class="col-4 col-12-medium">
 									<header>
-										<h2>Odio faucibus ipsum integer consequat</h2>
-										<p>Nascetur eu nibh vestibulum amet gravida nascetur praesent</p>
+										<strong class="title">INTRO</strong> <br/> <br/>
+										<p>Hi I’m Thao. I’m a full stack web developer <br/>
+											at Coderschool.</p>
 									</header>
 								</div>
 								<div class="col-4 col-12-medium">
-									<p>Feugiat accumsan lorem eu ac lorem amet sed accumsan donec.
-									Blandit orci porttitor semper. Arcu phasellus tortor enim mi
-									nisi praesent dolor adipiscing. Integer mi sed nascetur cep aliquet
-									augue varius tempus lobortis porttitor accumsan consequat
-									adipiscing lorem dolor.</p>
+									<p>In the past 2 months, I’ve made some useful websites as a team and independently, 
+										such as a web for game store, or a movie site where you can find any movie you like there…</p>
 								</div>
 								<div class="col-4 col-12-medium">
-									<p>Morbi enim nascetur et placerat lorem sed iaculis neque ante
-									adipiscing adipiscing metus massa. Blandit orci porttitor semper.
-									Arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer
-									mi sed nascetur cep aliquet augue varius tempus. Feugiat lorem
-									ipsum dolor nullam.</p>
+									
+									<p>I’m interested in both front-end and back-end role, I wanna go further with this path in the future, 
+										thus I am looking for a full stack position where I can apply what I’ve learn so far.</p>
 								</div>
 							</div>
 						</div>
 					</div>
-					<a href="#two" class="goto-next scrolly">Next</a>
+					<a href="#work" class="goto-next scrolly"></a>
 				</section>
 
-			<!-- Two -->
-				<section id="two" class="spotlight style2 right">
-					<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
+			<!-- Work - MovieMania -->
+				<section id="work" class="spotlight style2 right">
+					<span class="image fit main"><img src="images/movie.png" alt="" /></span>
 					<div class="content">
+						<strong class="title">WORK</strong><br/><br/>
 						<header>
-							<h2>Interdum amet non magna accumsan</h2>
-							<p>Nunc commodo accumsan eget id nisi eu col volutpat magna</p>
+							<h2>Movie Mania</h2>
+							<p class="subtitle">Welcome to Movie Mania where you can explore the whole world of movie</p>
 						</header>
-						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<p>This website was built by React and database from TMDB. Users can search any movie with keywords, 
+							filter by categories, catch up with trending movies, see details and trailer of a specific movie.</p>
 						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
+							<li><a href="https://moviemania-tmdb.netlify.app/" target="_blank" class="button">Live demo</a></li>
+							<li><a href="https://github.com/ThuThao-Jul/MovieMania" target="_blank" class="button">GitHub</a></li>
 						</ul>
 					</div>
-					<a href="#three" class="goto-next scrolly">Next</a>
+					<a href="#shoptee" class="goto-next scrolly"></a>
 				</section>
 
-			<!-- Three -->
-				<section id="three" class="spotlight style3 left">
-					<span class="image fit main bottom"><img src="images/pic04.jpg" alt="" /></span>
+			<!-- Work - ShopTee -->
+				<section id="shoptee" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="images/shoptee.png" alt="" /></span>
 					<div class="content">
 						<header>
-							<h2>Interdum felis blandit praesent sed augue</h2>
-							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+							<h2>ShopTee</h2>
+							<p class="subtitle">Amazing e-commerce site for everyone.</p>
 						</header>
-						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<p>Users can see all products, filter by categories, check a single product's details, register for a new account, log in for more advanced functions and so much more.</p>
 						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
+							<li><a href="https://shoptee-ecommerce.netlify.app/" target="_blank" class="button">Live demo</a></li>
+							<li><a href="https://github.com/ThuThao-Jul/ecom-shoptee" target="_blank" class="button">GitHub</a></li>
 						</ul>
 					</div>
-					<a href="#four" class="goto-next scrolly">Next</a>
+					<a href="#game" class="goto-next scrolly"></a>
 				</section>
 
-			<!-- Four -->
-				<section id="four" class="wrapper style1 special fade-up">
+			<!-- Work - Game -->
+			<section id="game" class="spotlight style4 right">
+				<span class="image fit main bottom"><img src="images/game.png" alt="" /></span>
+				<div class="content">
+					<header>
+						<h2>Save your princess</h2>
+						<p class="subtitle">A canvas game made from Javascript.</p>
+					</header>
+					<p>Try to save the princess before running out of moves but remember to stay away from the devils.</p>
+					<ul class="actions">
+						<li><a href="https://game-saveyourprincess.netlify.app/" target="_blank" class="button">Live demo</a></li>
+						<li><a href="https://github.com/ThuThao-Jul/SaveYourPrincess" target="_blank" class="button">GitHub</a></li>
+					</ul>
+				</div>
+				<a href="#codernews" class="goto-next scrolly"></a>
+			</section>
+
+			<!-- Work - Codernews -->
+			<section id="codernews" class="spotlight style5 left">
+				<span class="image fit main bottom"><img src="https://www.borouge.com/MediaCentre/Images1/News-Website-banner-V1.JPG" alt="" /></span>
+				<div class="content">
+					<header>
+						<h2>Codernews</h2>
+						<p class="subtitle">The lasted news all around the world updated every second.</p>
+					</header>
+					<p>Visit Codernews to stay up to date with various categories and sources, check out Bitcoin price and other popular coins.</p>
+					<ul class="actions">
+						<li><a href="https://github.com/ThuThao-Jul/week3-wednesday" target="_blank" class="button">GitHub</a></li>
+					</ul>
+				</div>
+				<a href="#skills" class="goto-next scrolly"></a>
+			</section>
+
+			<!-- Skills -->
+				<section id="skills" class="wrapper style1 special fade-up">
 					<div class="container">
 						<header class="major">
-							<h2>Accumsan sed tempus adipiscing blandit</h2>
-							<p>Iaculis ac volutpat vis non enim gravida nisi faucibus posuere arcu consequat</p>
+							<h2>SKILLS</h2>
+							<!-- <p>Iaculis ac volutpat vis non enim gravida nisi faucibus posuere arcu consequat</p> -->
 						</header>
 						<div class="box alt">
 							<div class="row gtr-uniform">
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-chart-area"></span>
-									<h3>Ipsum sed commodo</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<span class="icon solid alt major"><i class="fab fa-html5 fa-3x center"></i></span>
+									<h3>HTML & HTML5</h3>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-comment"></span>
-									<h3>Eleifend lorem ornare</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<span class="icon solid alt major"><i class="fab fa-css3 fa-3x center"></i></span>
+									<h3>CSS</h3>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-flask"></span>
-									<h3>Cubilia cep lobortis</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<span class="icon solid alt major"><i class="fab fa-js-square fa-3x center"></i></span>
+									<h3>Javascript</h3>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-paper-plane"></span>
-									<h3>Non semper interdum</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<span class="icon solid alt major"><i class="fab fa-react fa-3x center"></i></span>
+									<h3>ReactJS</h3>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-file"></span>
-									<h3>Odio laoreet accumsan</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<span class="icon solid alt major"><i class="fab fa-node fa-3x center"></i></span>
+									<h3>Nodejs</h3>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-lock"></span>
-									<h3>Massa arcu accumsan</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<span class="icon solid alt major"><i class="fab fa-github fa-3x center"></i></span>
+									<h3>GitHub</h3>
 								</section>
 							</div>
+							<hr/>
+							<div class="row gtr-uniform">
+							<section class="col-4 col-6-medium col-12-xsmall">
+								<span class="icon solid alt major"><i class="far fa-comments fa-3x center"></i></span>
+								<h3>Communication</h3>
+							</section>
+							<section class="col-4 col-6-medium col-12-xsmall">
+								<span class="icon solid alt major"><i class="fas fa-users fa-3x center"></i></span>
+								<h3>Teamwork</h3>
+							</section>
+							<section class="col-4 col-6-medium col-12-xsmall">
+								<span class="icon solid alt major"><i class="fab fa-leanpub fa-3x center"></i></span>
+								<h3>Willing to learn</h3>
+							</section>
 						</div>
-						<footer class="major">
-							<ul class="actions special">
-								<li><a href="#" class="button">Magna sed feugiat</a></li>
-							</ul>
-						</footer>
+						</div>
 					</div>
 				</section>
 
-			<!-- Five -->
-				<section id="five" class="wrapper style2 special fade">
+			<!-- Contact -->
+				<section id="contact" class="wrapper style2 special fade">
 					<div class="container">
 						<header>
-							<h2>Magna faucibus lorem diam</h2>
-							<p>Ante metus praesent faucibus ante integer id accumsan eleifend</p>
+							<h2>Contact</h2>
+							<p>If you are interested in my resume, feel free to contact me.</p>
 						</header>
 						<form method="post" action="#" class="cta">
-							<div class="row gtr-uniform gtr-50">
-								<div class="col-8 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
-								<div class="col-4 col-12-xsmall"><input type="submit" value="Get Started" class="fit primary" /></div>
+							<div class="row gtr-uniform gtr-50 align-center">
+								<div class="col-12 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
+								<div class="col-12 col-12-xsmall"><textarea class="col-12 col-12-xsmall" placeholder="Your message here"></textarea></div>
+								<div class="col-4 col-12-xsmall"><input type="button" value="Submit" class="fit primary" /></div>
 							</div>
 						</form>
+
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/thao-nguyen28/" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/ThuThao-Jul" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
 					</div>
 				</section>
 
-			<!-- Footer -->
-				<footer id="footer">
-					<ul class="icons">
-						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</footer>
 
 		</div>
 
